@@ -1,0 +1,28 @@
+{% extends 'myshop/shop.html' %}
+{% load static %}
+
+{% block content %}
+<hr>
+<a href="{% url 'second' %}"><center><h1>previous</h1></center></a>
+<hr>
+<table>
+    <tr>
+         <td width="45%"><img src="{% static 'images/bkid650.jpg' %}" width="250px" height="400px"></td>     
+         <td width="45%"><img src="{% static 'images/g2kid800.jpg' %}" width="250px" height="400px"></td>
+         <td width="45%"><img src="{% static 'images/gkid800.jpg' %}" width="250px" height="400px"></td>  
+           
+    </tr>
+     <tr>    
+        <td width="45%"><img src="{% static 'images/bkid800.jpg' %}" width="250px" height="400px"></td>
+        <td width="45%"><img src="{% static 'images/k1.jpg' %}" width="250px" height="400px"></td>
+        <td width="45%"><img src="{% static 'images/k2.jpg' %}" width="250px" height="400px"></td>
+    </tr>
+    <tr>   
+        <td width="45%"><img src="{% static 'images/k3.jpg' %}" width="250px" height="400px"></td>
+        <td width="45%"><img src="{% static 'images/k4.jpg' %}" width="250px" height="400px"></td>
+        <td width="45%"><img src="{% static 'images/k5.jpg' %}" width="250px" height="400px"></td>
+    </tr>
+    
+
+</table>
+{% endblock %}

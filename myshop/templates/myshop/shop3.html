@@ -1,0 +1,16 @@
+{% extends 'myshop/shop.html' %}
+{% load static %}
+
+{% block content %}
+<hr>
+<a href="{% url 'second' %}"><center><h1>previous</h1></center></a>
+<hr>
+<table>
+    <tr>
+<td><img src="{% static 'images/shirt800.jpg' %}" width="80%" height="400px"></td>
+<td><img src="{% static 'images/shirt499.jpg' %}" width="80%" height="400px"></td>
+<td><img src="{% static 'images/shirt650.jpg' %}" width="80%" height="400px"></td>
+<td><img src="{% static 'images/shirt500.jpg' %}" width="80%" height="400px"></td>
+</tr>
+</table>
+{% endblock %}

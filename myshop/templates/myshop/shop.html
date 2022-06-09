@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my shop</title>
+</head>
+<body>
+    {% block content %}
+    <img src= "{% static 'images/mp shop top.jpg' %}" width="99%" height="60px">
+    <input type="text" size="218" placeholder="search for products,brands and more" >
+    <img src= "{% static 'images/shop2.jpg' %}" width="99%" height="90%">
+
+ <a href="{% url 'second' %}"><center><h2>products</h2></center></a>
+    <hr>
+{% endblock %}
+ 
+</body>
+</html>

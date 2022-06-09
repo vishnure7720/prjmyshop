@@ -1,0 +1,19 @@
+{% extends 'myshop/shop.html' %}
+{% load static %}
+
+{% block content %}
+<hr>
+<img src="{% static 'images/products.jpg' %}" width="100%" height="150px"><hr><br><br><br><br>
+
+<img src="{% static 'images/all off.jpg' %}" width="100%" height="250px"><br><br>
+
+<a href="{% url 'third' %}"><center><h2>MENS CLOTHINGS</h2></center></a>
+<img src="{% static 'images/men.jpg' %}" width="100%" height="400px"><br>
+
+<a href="{% url 'fourth' %}"><center><h2>WOMENS CLOTHINGS</h2></center></a>
+<img src="{% static 'images/women.jpg' %}" width="100%" height="400px"><br>
+
+<a href="{% url 'fifth' %}"><center><h2>KIDS CLOTHINGS</h2></center></a>
+<img src="{% static 'images/kids.jpg' %}" width="100%" height="400px"><br>
+{% endblock %}
+
